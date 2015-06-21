@@ -1,2 +1,0 @@
-# Militia.io
-Public stuff

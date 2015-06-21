@@ -88,9 +88,9 @@ a:focus {
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
-    text-transform: uppercase;
+    text-transform: none;
     font-family: "Helvetica Neue",Helvetica;
-    font-weight: 100;    background-color: #000000;
+    font-weight: 200;    background-color: #000000;
 }
 
 .navbar-custom .navbar-brand {
