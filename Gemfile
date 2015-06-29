@@ -1,2 +1,2 @@
-source 'https://vlall.github.io/Militia.io'
+source 'https://rubygems.org'
 gem 'github-pages'
