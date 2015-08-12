@@ -94,7 +94,7 @@ a:focus {
 }
 
 .navbar-custom .navbar-brand {
-    font-weight: 700;
+    font-weight: 100;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -310,7 +310,7 @@ a:focus {
 }
 
 .btn {
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-family: "Helvetica Neue",Arial, Helvetica, sans-serif;
     font-weight: 100;
     -webkit-transition: all .3s ease-in-out;
