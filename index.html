@@ -1,167 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="militia">
+    <meta name="author" content="Mike Bartoli">
+    <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Militia</title>
+    <title>Militia.io</title>
 
-    <!-- Bootstrap Core CSS -->
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,400italic" rel="stylesheet">
+    <link href="css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!-- BootstrapValidator -->
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- Waves -->
+    <link href="css/waves.css" rel="stylesheet">
+
+    <!-- Compass Styles -->
+    <link href="css/compass.css" rel="stylesheet">
+
+    <!-- Loading bar -->
+    <script src="js/pace.min.js"></script>
+
+    <!-- HTML5 shiv for IE8 support -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
+  </head>
 
-</head>
+  <body>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-		 <a class="navbar-brand page-scroll" href="#page-top">
-                    </i>  <h3><span class="light">
-                    <img src="img/logo.png" height = "20" class="margin1">
-
-                </span> militia</h3>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#download">Download</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">militia
-                        </h1>
-
-
-                        <p class="intro-text">Intelligent and intuitive applications for analysts. Research funded by DARPA.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <section id="intro" class="image">
+      <div class="container-fluid">
+        <header class="row">
+          <div class="col-md-6 wow fadeInDown">
+            <i class="ion ion-compass ion-4x"></i>
+          </div>
+          <div class="col-md-6 text-right wow fadeInDown">
+            <button class="btn btn-link"><i class="ion ion-social-facebook ion-2x"></i></button>
+              <button class="btn btn-link"><i class="ion ion-social-twitter ion-2x"></i></button>
+          </div>
+        </header>
+      </div><!-- /.container-fluid -->
+      <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h1>About</h1>
-                <p>Militia is an on-going open source project dedicated to providing public and private sector analysts with cutting-edge tools in data analytics and machine learning.</p>
-            </div>
-        </div>
-    </section>
+          <div class="content col-md-8 col-md-offset-2 text-center wow fadeInRight">
+            <h1>Get <strong>Early Access</strong> To Milita</h1>
+            <p class="h3">Subscribe Now</p>
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <form role="form" id="subscribe">
+                  <div class="input-group input-group-lg">
+                      <input class="form-control" type="text" placeholder="Email Address" name="email"></input>
+                      <span class="input-group-btn">
+                          <button class="btn btn-success btn-search" type="submit">
+                            Subscribe
+                          </button>
+                      </span>
+                  </div>
+                  <div class="text-left">
+                    <i>* We won't spam</i>
+                  </div>
+                </form>
+              </div>
+            </div><!-- /.row -->
+          </div><!-- /.content -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /#intro -->
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                     <h1>Download militia</h1>
-                    <p>Visit our public repo on github, or download from PyPI<br> <h3>pip install militia<h3></p>
-
-                    <a href="http://github.com/militia-io" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <section id="timer" class="wow fadeInDown">
+      <div class="container">
+        <h2 class="text-center h1">Time left for launch</h2>
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h1>Contact Us</h1>
-                <p>Please send all inquiries to 
-                <a href="mailto:support@militia.io">support@militia.io</a>
+          <div class="col-md-12"> 
+            <ul class="countdown text-center">
+              <li class="slide-left"> <span class="days">00</span>
+                <p class="days_ref">days</p>
+              </li>
+              <li class="seperator">:</li>
+              <li class="slide-bottom"> <span class="hours">00</span>
+                <p class="hours_ref">hours</p>
+              </li>
+              <li class="seperator">:</li>
+              <li class="slide-top"> <span class="minutes">00</span>
+                <p class="minutes_ref">minutes</p>
+              </li>
+              <li class="seperator">:</li>
+              <li class="slide-right"> <span class="seconds">00</span>
+                <p class="seconds_ref">seconds</p>
+              </li>
+            </ul><!-- /.countdown -->
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /#timer -->
+
+    <section id="features">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12 text-center">
+            <h2 class="h1">Features</h2>
+          </div>
+        </div>
+        <div class="row" style="padding: 50px 0;">
+          <div class="col-md-4 wow fadeInLeft">
+              <div class="feature text-center">
+                <div class="icon one">
+                  <i class="ion ion-images ion-5x"></i>
+                </div>
+                <h3>Feature One</h3>
+                <p>
+                  Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.
                 </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="http://github.com/militia-io" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="mailto:militia.startup@gmail.com?Subject=Site%20Inquiry" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+              </div>
+          </div><!-- /.col-md-4 -->
 
-    <!-- Map Section -->
-    <div id="map"></div>
+          <div class="col-md-4 wow fadeInUp">
+              <div class="feature text-center">
+                <div class="icon two">
+                  <i class="ion ion-printer ion-5x"></i>
+                </div>
+                <h3>Feature Two</h3>
+                <p>
+                  Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.
+                </p>
+            </div><!-- /.panel -->
+          </div><!-- /.col-md-4 -->
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <h6>Copyright &copy; militia 2015</h6>
-        </div>
-    </footer>
+          <div class="col-md-4 wow fadeInRight">
+              <div class="feature text-center">
+                <div class="icon three">
+                  <i class="ion ion-videocamera ion-5x"></i>
+                </div>
+                <h3>Feature Three</h3>
+                <p>
+                  Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.
+                </p>
+            </div><!-- /.panel -->
+          </div><!-- /.col-md-4 -->
+
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /#about -->
+
+    <section id="contact" class="page-section light wow fadeInUp">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <h1 class="h1">Send us your thoughts!</h1>
+            <p>Etiam rhoncus. <strong>Maecenas tempus</strong>, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, <strong>blandit vel</strong>, luctus pulvinar, hendrerit id, lorem.</p>
+          </div>
+          <div class="col-md-8 col-md-offset-2">
+            <form role="form" class="form-compass">
+              <div class="form-group wow fadeInLeft">
+                <label for="nameInput">Name</label>
+                <input name="name" type="text" class="form-control input-lg" id="nameInput" placeholder="Enter name">
+              </div>
+              <div class="form-group wow fadeInRight">
+                <label for="emailInput">Email</label>
+                <input name="email" type="email" class="form-control input-lg" id="emailInput" placeholder="Enter email">
+              </div>
+              <div class="form-group wow fadeInLeft">
+                <label for="messageInput">Message</label>
+                <textarea name="message" class="form-control input-lg" id="messageInput" placeholder="Enter message"></textarea>
+              </div>
+              <div class="text-center wow fadeInRight">
+                <button type="submit" class="btn btn-success btn-round btn-lg waves-effect">Send</button>
+              </div>
+            </form>
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /#contact -->
+
+    <div id="footer" class="footer">
+      <div class="container">
+        <div class="text-center">Copyright &copy; 2015 Militia.io. All rights reserved.</div>
+      </div>
+    </div><!-- /#footer -->
+
+    <p class="scroll-to-top"><a href="#"><i class="ion ion-chevron-up"></i></a></p>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
+    <!-- Bootstrap core JS -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
+    <!-- BootstrapValidator -->
+    <script src="js/bootstrapValidator.min.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <!-- DownCount -->
+    <script src="js/jquery.downCount.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+    <!-- WOW -->
+    <script src="js/wow.min.js"></script>
 
-</body>
+    <!-- Waves -->
+    <script src="js/waves.js"></script>
 
+    <!-- Compass Javascripts -->
+    <script src="js/compass.js"></script>
+
+  </body>
 </html>
