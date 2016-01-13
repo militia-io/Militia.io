@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 p {
-  font-size: 17px;
+  font-size: 14px;
 }
 
 strong {
@@ -254,8 +254,8 @@ ul.countdown li p {
 
 
 #features .icon {
-  width: 126px;
-  height: 126px;
+  width: 75px;
+  height: 75px;
   border-radius: 100%;
   margin: 0px auto 20px;
   padding: 5px;
@@ -266,13 +266,13 @@ ul.countdown li p {
   height: 100%;
   color: #FFF;
   border-radius: 100%;
-  font-size: 40px;
-  line-height: 112px;
+  font-size: 30px;
+  line-height: 60px;
   border: 2px solid #FFF;
 }
 
 #features .icon.one {
-  background: #B6A28D;
+  background: #800000;
 }
 
 #features .icon.two {
@@ -281,6 +281,18 @@ ul.countdown li p {
 
 #features .icon.three {
   background: #4D5B6C;
+}
+
+#features .icon.four {
+  background: #000000;
+}
+
+#features .icon.five {
+  background: #78866B;
+}
+
+#features .icon.six {
+  background: #666699;
 }
 
 
